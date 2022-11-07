@@ -26,8 +26,10 @@ video = cv2.VideoCapture(0)
 
 # Variables
 posX = 0 # Current object's x position (-Left +Right)
-Speed = -.01 # Forward Speed (-.01 is default, otherwise it moves)
-steering = 0 # Steering Speed (-right +left)
+Speed = -.01 # Current forward Speed (-.01 is default, otherwise it moves)
+maxSpeed = 0.5 # Max forward speed
+steering = 0 # Current steering Speed (-right +left)
+maxSteer = 0.5 # Max steering speed
 minSize = 150 # Minimum object size for recognition
 objSize = 0 # Size of color detected object
 butPin = 16 # Broadcom pin 16 (P1 pin 36) (Button)
@@ -53,9 +55,9 @@ while True
                 cv2.rectangle(img, (x,y), (x+w, y+h), (0, 0, 255), 3)
                 posX = x-300
                 print (posX)
-                steering = (posX/600)*-1
+                steering = (posX/(1/maxSteer))*-1
                 objSize = (cv2.contourArea(contour))-minSize
-                speed = (objSize/((3600-minSize*3)*2))-.5
+                speed = (objSize/((3600-minSize*5)*(1/maxSpeed)))-maxSpeed
 
     if posX < 0:
         print ("Left")
