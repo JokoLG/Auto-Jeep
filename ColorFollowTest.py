@@ -41,7 +41,7 @@ kit.continuous_servo[1].throttle = steering #Steering
 GPIO.setmode(GPIO.BCM) # Broadcom pin-numbering scheme
 GPIO.setup(butPin, GPIO.IN, pull_up_down=GPIO.PUD_UP) # Button pin set as input w/ pull-up
 
-while True
+while True:
     success, img = video.read()
     image = cv2.cvtColor(img, cv2.COLOR_BGR2HSV)
     mask = cv2.inRange(image, lower, upper)
