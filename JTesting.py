@@ -10,9 +10,11 @@ steering = (posX/(300*(1/0.5)))
 print ("steering")
 print (steering)
 
-objSize = (3600)-150
+objSize = (3300)-150
 
-speed = ((objSize/((3600-150)*(1/0.5)))-(0.5+0.1))*-1
+speed = ((objSize/((3600-150)*(1/0.5)))-((0.5/10)*9))
+if speed > 0:
+    speed = 0
 print("Speed")
 print(speed)
 

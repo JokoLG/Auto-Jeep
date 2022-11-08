@@ -30,14 +30,14 @@ Speed = -.01 # Current forward Speed (-.01 is default, otherwise it moves)
 maxSpeed = 0.5 # Max forward speed
 steering = 0 # Current steering Speed (-right +left)
 maxSteer = 0.5 # Max steering speed
+objSize = 0 # Current size of color detected object
 minSize = 150 # Minimum object size for recognition
-objSize = 0 # Size of color detected object
-butPin = 16 # Broadcom pin 16 (P1 pin 36) (Button)
 
 kit.continuous_servo[0].throttle = speed #Forward
 kit.continuous_servo[1].throttle = steering #Steering 
 
 # Setup for Pins
+butPin = 16 # Broadcom pin 16 (P1 pin 36) (Button)
 GPIO.setmode(GPIO.BCM) # Broadcom pin-numbering scheme
 GPIO.setup(butPin, GPIO.IN, pull_up_down=GPIO.PUD_UP) # Button pin set as input w/ pull-up
 
@@ -57,7 +57,11 @@ while True:
                 print (posX)
                 steering = (posX/(300*(1/maxSteer)))
                 objSize = (cv2.contourArea(contour))-minSize
-                speed = (objSize/((3600-minSize*5)*(1/maxSpeed)))-maxSpeed
+                speed = ((objSize/((3600-minSize)*(1/0.5)))-((maxSpeed/10)*9))
+                if speed > 0:
+                    speed = 0
+                kit.continuous_servo[0].throttle = speed
+                kit.continuous_servo[1].throttle = steering
 
     if posX < 0:
         print ("Left")
@@ -69,3 +73,4 @@ while True:
     cv2.imshow("mask", mask)
     cv2.imshow("webcam", img)
     cv2.waitKey(1)
+# End of code ._.
