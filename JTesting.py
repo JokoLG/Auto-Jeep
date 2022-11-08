@@ -12,7 +12,7 @@ print (steering)
 
 objSize = (3600)-150
 
-speed = ((objSize/((3600-150)*(1/0.5)))-0.5)*-1
+speed = ((objSize/((3600-150)*(1/0.5)))-(0.5+0.1))*-1
 print("Speed")
 print(speed)
 
