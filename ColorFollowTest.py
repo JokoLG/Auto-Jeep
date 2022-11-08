@@ -55,7 +55,7 @@ while True:
                 cv2.rectangle(img, (x,y), (x+w, y+h), (0, 0, 255), 3)
                 posX = x-300
                 print (posX)
-                steering = (posX/(1/maxSteer))*-1
+                steering = (posX/(300*(1/maxSteer)))
                 objSize = (cv2.contourArea(contour))-minSize
                 speed = (objSize/((3600-minSize*5)*(1/maxSpeed)))-maxSpeed
 
