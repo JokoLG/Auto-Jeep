@@ -73,4 +73,4 @@ while True:
     cv2.imshow("mask", mask)
     cv2.imshow("webcam", img)
     cv2.waitKey(1)
-# End of code ._.
+# End of code ._.   
