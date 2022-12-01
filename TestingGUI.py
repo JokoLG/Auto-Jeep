@@ -1,5 +1,7 @@
+# Imports
 from guizero import App, Text, PushButton
 
+# Gui Variables
 number = 1
 
 def valueUp():
@@ -21,3 +23,4 @@ value = Text(app, grid=[2,1], text=number, width=2, size=35)
 value_down = PushButton(app, grid=[3,1], command=valueDown, text="-")
 
 app.display()
+
