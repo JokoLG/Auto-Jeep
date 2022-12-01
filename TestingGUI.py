@@ -1,13 +1,23 @@
 from guizero import App, Text, PushButton
 
-def say_my_name():
-    welcome_message.value = "f**k apriltags"
+number = 1
 
-app = App(title="Ur Mom.")
+def valueUp():
+    global number
+    number += 1
+    value = Text(app, grid=[2,1], text=number, width=2, size=35)
+    app.display()
 
-welcome_message = Text(app, text="Pi GUI Test", 
-                       size=40, font="Arial", 
-                       color="black")
-button_test = PushButton(app, command=say_my_name, text="Test")
+def valueDown():
+    global number
+    number -= 1
+    value = Text(app, grid=[2,1], text=number, width=2, size=35)
+
+app = App(title="Jeep Testing UI", layout="grid")
+
+welcome = Text(app, grid=[0,1], text="Pi GUI Test: ", size=40, font="Arial", color="black")
+value_up = PushButton(app, grid=[1,1], command=valueUp, text="+")
+value = Text(app, grid=[2,1], text=number, width=2, size=35)
+value_down = PushButton(app, grid=[3,1], command=valueDown, text="-")
 
 app.display()
