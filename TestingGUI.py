@@ -3,7 +3,7 @@ from guizero import App, Text, PushButton
 
 # Gui Variables
 number = 1
-page = "Main"
+page = "Testing_1"
 
 def valueUp():
     global number
@@ -19,7 +19,7 @@ def valueDown():
 app = App(title="Jeep Testing UI", layout="grid")
 
 if (page == "Main"): 
-    
+    print("no")
 
 elif page == "Testing_1":
     welcome = Text(app, grid=[0,1], text="Pi GUI Test: ", size=40, font="Arial", color="black")
