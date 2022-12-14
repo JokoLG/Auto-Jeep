@@ -16,6 +16,10 @@ def valueDown():
     number -= 1
     value = Text(app, grid=[2,1], text=number, width=2, size=35)
 
+def goTo(pagestring):
+    global page
+    page = pageString
+
 app = App(title="Jeep Testing UI", layout="grid")
 
 if (page == "Main"): 
