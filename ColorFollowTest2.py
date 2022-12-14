@@ -20,8 +20,11 @@ kit = ServoKit(channels=16)
 # Color detection color range (BGR format)
 lower1 = np.array([0, 100, 150])
 upper1 = np.array([80, 230, 250])
-lower2 = np.array([180, 180, 0])
-upper2 = np.array([255, 230, 100])
+lower2 = np.array([180, 150, 0])
+upper2 = np.array([255, 255, 100])
+
+lower3 = np.array([255, 255, 255])
+upper3 = np.array([255, 255, 255])
 
 # Video capture for color detection
 video = cv2.VideoCapture(0)
@@ -49,10 +52,13 @@ while True:
     maskOne = cv2.inRange(image, lower1, upper1)
     maskTwo = cv2.inRange(image, lower2, upper2)
     
-    res = cv2.bitwise_and(image, image, mask=maskOne)
-    res[maskOne>0]=(255, 0, 0)
+    res = cv2.bitwise_and(image, image, mask=maskOne+maskTwo)
+    res[maskOne>0]=(255, 255, 255)
+    res[maskTwo>0]=(255, 255, 255)
     
-    contours, hierarchy = cv2.findContours(maskOne, cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)
+    resMask = cv2.inRange(res, lower3, upper3)
+    
+    contours, hierarchy = cv2.findContours(resMask, cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)
     
     if len(contours)!=0:
         for contour in contours:
@@ -75,9 +81,9 @@ while True:
         print("Right")
     else:
         print("Center/out")
-
+        
     cv2.imshow("mask1", res)
-    cv2.imshow("mask2", maskTwo)
+    cv2.imshow("masssssk1", resMask)
     cv2.imshow("webcam", img)
     cv2.waitKey(1)
 # End of code ._.
