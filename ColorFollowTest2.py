@@ -53,8 +53,8 @@ while True:
     maskTwo = cv2.inRange(image, lower2, upper2)
     
     res = cv2.bitwise_and(image, image, mask=maskOne+maskTwo)
-    res[maskOne>0]=(255, 255, 255)
-    res[maskTwo>0]=(255, 255, 255)
+    res[maskOne>0]=(0, 255, 0)
+    res[maskTwo>0]=(255, 0, 0)
     
     resMask = cv2.inRange(res, lower3, upper3)
     
@@ -83,7 +83,7 @@ while True:
         print("Center/out")
         
     cv2.imshow("mask1", res)
-    cv2.imshow("masssssk1", resMask)
-    cv2.imshow("webcam", img)
+    cv2.imshow("resMask", resMask)
+    cv2.imshow("img", img)
     cv2.waitKey(1)
 # End of code ._.
