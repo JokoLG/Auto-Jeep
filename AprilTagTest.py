@@ -1,3 +1,6 @@
+# NOT wORKING! #
+# code we got from the internet to try and recognize an april tag
+
 # import the necessary packages
 from picamera.array import PiRGBArray
 from picamera import PiCamera

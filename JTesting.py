@@ -1,3 +1,6 @@
+# IGNORE #
+# just some lines i made to test the math for the steering based on the color were folowwing's position on the camera
+
 import time
 from time import sleep
 

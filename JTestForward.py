@@ -1,3 +1,6 @@
+# WORKING! #
+# made to test the back wheel turning and button press recognition
+
 import time
 import RPi.GPIO as GPIO
 import board

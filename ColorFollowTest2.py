@@ -1,3 +1,6 @@
+# UNFINISHED # (but working to an extent)
+# code we were working on to check for 2 specific colors in a specific pattern and then follow that
+
 import cv2
 import numpy as np
 import time

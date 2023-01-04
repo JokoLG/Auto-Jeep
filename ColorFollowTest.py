@@ -1,3 +1,6 @@
+# WORKING! # (probably)
+# code we made to recognize a color with the camera and turn the car based on its position on the screen
+
 import cv2
 import numpy as np
 import time

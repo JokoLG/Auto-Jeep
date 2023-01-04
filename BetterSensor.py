@@ -1,3 +1,6 @@
+# NOT WORKING! #
+# took old code which used the sensors and tried to improve it but failed ;-;
+
 import time
 import RPi.GPIO as GPIO
 import board

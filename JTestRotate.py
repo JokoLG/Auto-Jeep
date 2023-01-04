@@ -1,3 +1,6 @@
+# WORKING #
+# code made to test the steering because it turns more to one side... good luck
+
 import time
 import RPi.GPIO as GPIO
 import board
