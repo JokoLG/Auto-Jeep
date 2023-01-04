@@ -1,0 +1,66 @@
+Old Challenges:
+
+Alpha Challenge:
+The vehicle will be started by a team member and after a delay of a few seconds 
+or a signal received remotely, 
+the vehicle will drive forward in a straight line for 3 meters (+/- 0.5 m), 
+make a right turn,then drive forward for an additional 3 meters (+/- 0.5 m).
+
+Bravo Challenge:
+Vehicle should move forward until it senses an obstacle, and stops. 
+The obstacle will move into the path after movement begins at a distance of 3-10 meters.
+After the obstacle is removed, the jeep should continue to travel for at least another 1 meter. 
+If there is no obstacle, the vehicle should run for at least 10 meters. 
+Must complete 3 course runs!
+
+Charlie Challenge:
+Vehicle must follow highly reflective tape. The distance travelled will be between 6 - 10 meters. 
+Lanes will be 2 to 3 meters wide. Vehicles must provide audible or 
+visual "encroachment indicators" whenever lines are being approached 
+and steering adjustments are made.
+Research:
+https://www.chiefdelphi.com/t/reflective-tape-sensor/139783/4
+
+
+Delta Challenge:
+perform a parallel parking action within the following parameters: 
+The space will be 3 meters long and 1 meter deep.
+Vehicle must travel along a straight path for a minimum of 3 meters 
+to locate an open space between 2 objects then use sensors to maneuver into the open spot, 
+like a passenger vehicle. 
+The vehicle must be fully inside the space and indicate when parking is complete.
+
+Echo Challenge:
+The vehicle will drive into a dark area (simulating a tunnel or garage), 
+stop, and turn on its light(s). The lights can be headlights or another form of light. 
+The specific light and placement may be determined by the team, 
+but it must be bright enough for the judges to view from the exterior of the dark area. 
+When a door on the opposite end of the "parking garage" opens, the vehicle will continue to travel, 
+exiting the garage and turning its lights back off, stopping with the rear of the vehicle 
+approximately 1 meter outside of the garage.
+
+Foxtrot Challenge:
+The vehicle will use GPS to navigate and drive to a specific location (set of coordinates) 
+given by the judges. The coordinates will be given on the day of the final event. 
+The location will have a 2 meter diameter circle around it. 
+Teams will have 3 trials to have their vehicle travel into the circle and stop 
+and the highest scoring of the trials will be the final points earned score
+
+Golf Challenge:
+The vehicle will detect and follow another vehicle throughout an undefined course. 
+Each vehicle involved will allow the other teams to place a marker of some kind on 
+the rear of their car (reflective tape?). 
+This will simulate fleets following each other on the roadways in a "platooning" configuration.
+
+Mobility Exhibition Challenge:
+Teams will demonstrate innovative mobility functionality, 
+not seen in the other AIVD Missions. 
+Teams are free to use whatever sensor technology they feel is appropriate. 
+Teams must integrate the AIVD vehicle as part of the demonstration,
+but may also develop and demonstrate auxiliary equipment to simulate other devices 
+(traffic signals, DRC units, emergency vehicles, etc) or other objects 
+(buildings, pedestrians, etc) in their environment that interact with the AIVD vehicle. 
+These demonstrations should model scenarios & challenges that occur in the current 
+mobility industry. This exhibition is intended for teams that have successfully completed all 
+the other AIVD Missions (“Alpha” through “Golf”). 
+The scoring for this exhibition will only be used in a “tie-breaker” scenario.
