@@ -13,11 +13,11 @@ this is a list of the libraries that most likely work
 
 # Basics of each library
 Opencv (import cv2)
-{
-    stuff
-    stuffffff
-    test
-}
+'''
+stuff
+stuffffff
+test
+'''
 
 
 
