@@ -1,3 +1,17 @@
+# UNFINISHED #works to an extent, i will explain this one in detail i guess
+# basically its a UI made to start tests and stuff without having to run each separate script
+# basically we would put all the code into this single script and choose what to run and with what parameters easily
+# the first thing we tried to implement was basically the colordetection
+# so we could update what color it was detecting in real time while it was being detected
+# the reason this isnt finished is because the camera input and output has to be constantly updated
+# and it has to constantly get new info from the ui
+# but basically constantly updating the cam would work but while updatig the cam you cant update the ui
+# anyways its definitely fixable im just lazy and dont have much time
+# its definitely fixable (maybe(probably(most likely)))
+# what we used to make the UI is GUIZero its pretty unimpressive but works fine so i used it
+# anywys if you want to learn anything of how to do stuff with guizero just check out its documentation on google its pretty well mde
+# the UI is absolutely not neccessary but i felt itd be useful in the long run (if it worked properly ;-;)
+
 # Imports
 from guizero import App, Text, PushButton, Slider
 import subprocess

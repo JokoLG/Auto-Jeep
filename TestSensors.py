@@ -1,3 +1,6 @@
+# IDK IF THIS WORKS # havent tested it d:
+# code to test the sensors if you couldnt guess by the title
+
 #Libraries
 import RPi.GPIO as GPIO
 import time
