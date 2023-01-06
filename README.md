@@ -89,4 +89,4 @@ GPIO.setup(butPin, GPIO.IN, pull_up_down=GPIO.PUD_UP) # Button pin set as input 
 kit.continuous_servo[1].throttle = -.5 # after the equal goes a number between -1 and 1 for the speed
 # the number right he^re is the motor number, 0 is the back wheel and 1 is the front rotation
 ```
-
+we didnt do as much as the previous team with the sensors so check out the sensor scripts to learn about that d:
