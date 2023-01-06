@@ -1,3 +1,5 @@
+# This is code made to test the distance sensors from the jeep
+
 import time
 import RPi.GPIO as GPIO
 
