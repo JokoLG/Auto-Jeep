@@ -1,3 +1,7 @@
+# NOT WORKING #
+# hard to detect apriltags... or we can technically detect them but from a still picture
+# anyways i suggest just focusing on opencv and color recog
+
 # import the necessary packages        
 from picamera.array import PiRGBArray
 from picamera import PiCamera
