@@ -1,3 +1,7 @@
+# NOT WORKING
+# box around the QR code was not working
+# we were trying to detect the code in the camera view before programming the movement of the wheels
+
 from imutils.video import VideoStream
 from pyzbar import pyzbar
 import argparse

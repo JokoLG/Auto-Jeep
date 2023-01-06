@@ -1,3 +1,7 @@
+# WORKING
+# this is supposed to rotate the wheels to the left or right depending on where the color is detected in the camera view
+# the wheels constantly move forward - they don’t stop running with a button yet
+
 import cv2
 import numpy as np
 

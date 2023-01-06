@@ -1,3 +1,7 @@
+# NOT fully WORKING
+# set to detect two colors: blue and yellow but not always reliable
+# tried to create a mask that would show both masked colors in their original colors but the colors were inverted when both were being detected
+
 import cv2
 import numpy as np
 import time

@@ -1,3 +1,6 @@
+# WORKING
+# color values are set to detect yellow ball
+
 import cv2
 import numpy as np
 import time

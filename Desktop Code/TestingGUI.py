@@ -1,3 +1,7 @@
+# WORKING
+# created a user interface to make running programs easier
+# the other testing gui script has a more in depth comment at the top
+
 # Imports
 from guizero import App, Text, PushButton, Slider
 import subprocess

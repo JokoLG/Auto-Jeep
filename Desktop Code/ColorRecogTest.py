@@ -1,4 +1,7 @@
-##tessssssssst
+# WORKING
+# this detects the yellow ball with its current color values
+# this creates a mask that shows the parts of the image that are detected in white
+
 import cv2
 import numpy as np
 

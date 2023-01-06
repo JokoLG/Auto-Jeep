@@ -1,3 +1,7 @@
+# WORKING
+# one limitation: the Jeep will stop really close to the sensor
+# we didn’t use this much because the rotation of the wheels wasn’t really precise yet
+
 #Libraries
 import RPi.GPIO as GPIO
 import time

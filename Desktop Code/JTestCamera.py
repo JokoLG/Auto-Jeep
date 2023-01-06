@@ -1,3 +1,6 @@
+# WORKING
+# checks if camera display works
+
 import time
 from picamera import PiCamera
 from time import sleep

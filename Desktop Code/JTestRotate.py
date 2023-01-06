@@ -1,3 +1,6 @@
+# WORKING (almost fully)
+# turns all the way right, centers, all the way left, and centers the wheels to check rotation
+
 import time
 import RPi.GPIO as GPIO
 import board

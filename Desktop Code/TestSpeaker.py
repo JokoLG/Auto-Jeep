@@ -1,3 +1,7 @@
+# WORKING
+# we connected the speaker through the headphone port in the Raspberry Pi because the Bluetooth wasn’t working
+# it was able to play the bicycle sound file on the Desktop
+
 import time
 import RPi.GPIO as GPIO
 import board

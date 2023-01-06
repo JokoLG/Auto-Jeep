@@ -1,3 +1,7 @@
+# NOT WORKING
+# we made a new version with different code to detect the QR code
+# we used a test file with the QR code saved but that wasn’t working
+
 import glob
 import cv2
 import pandas as pd

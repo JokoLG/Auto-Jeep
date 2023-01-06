@@ -1,3 +1,6 @@
+# WORKING
+# starts moving forward if the button is pressed
+
 import time
 import RPi.GPIO as GPIO
 import board
